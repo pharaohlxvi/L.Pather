@@ -186,7 +186,7 @@ export default class Pather extends FeatureGroup {
     this.svg.remove();
 
     if (this.options.removePolylines) {
-      const length = this.polylines.length;
+      let length = this.polylines.length;
 
       while (length--) {
         this.removePath(this.polylines[length]);
